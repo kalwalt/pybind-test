@@ -1,0 +1,4 @@
+/*.so         # ignores all .so files in the project directory and subdirectories
+build/*/*.o
+build/*/*.so
+*.so
