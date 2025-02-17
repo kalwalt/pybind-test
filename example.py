@@ -11,3 +11,5 @@ my_module.scale_array(arr, 2.0)
 print(arr)
 
 print(my_module.divide(20,2))
+
+help(my_module)

@@ -13,8 +13,11 @@ ext_modules = [
 
 setup(
     name='my_module',
+    author='@kalwalt',
+    description='A simple example project using pybind11 and numpy',
     ext_modules=ext_modules,
     cmdclass={'build_ext': build_ext},
     # Set to False to include binaries
     zip_safe=False,
+    python_requires=">=3.7",
 )
