@@ -26,7 +26,17 @@ void scale_array(py::array_t<double> array, double scale) {
     }
 }
 
+double divide(double a, double b) {
+    // Check if the divisor is zero
+    if (b == 0) {
+        // Throw a runtime error if division by zero occurs
+        throw std::runtime_error("Division by zero");
+    }
+    return a / b;
+}
+
 PYBIND11_MODULE(my_module, m) {
     m.def("sum_array", &sum_array, "Sum all elements of a NumPy array");
     m.def("scale_array", &scale_array, "Scale all elements of a NumPy array by a given factor");
+    m.def("divide", &divide, "Divide two numbers");
 }

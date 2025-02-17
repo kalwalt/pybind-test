@@ -9,3 +9,5 @@ print(my_module.sum_array(arr))
 my_module.scale_array(arr, 2.0)
 # Outputs: [2.0, 4.0, 6.0, 8.0]
 print(arr)
+
+print(my_module.divide(20,2))

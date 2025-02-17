@@ -6,7 +6,7 @@ This is a simple example of how to use [pybind11](https://github.com/pybind/pybi
 ## Prerequisites
 You need to have the following installed on your system:
 - Python 3
-- mumpy
+- numpy
 - pybind11
   
 You can install numpy and pybind11 using pip:
